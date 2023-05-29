@@ -12,7 +12,7 @@ ul#menu-items {
     width: 100%;
     font-weight: bold;
     font-size: 20px;
-    margin-left: 2.5em;
+    margin-left: 1.5em;
     margin-top: 2.5em;
     &#category0 {
       margin-top: 0.5em;
@@ -20,7 +20,7 @@ ul#menu-items {
   }
 
   li.menu-item {
-    width: 250px;
+    width: 225px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -48,18 +48,21 @@ ul#menu-items {
 
     p.item-desc {
       width: 80%;
+      height: 2em;
     }
 
     p.item-price {
       font-size: larger;
       color: black;
-      background-color: orange;
+      background-color: #F3BCC8;
       width: 80%;
       border-radius: 12px;
       padding-top: 10px;
       padding-bottom: 10px;
-      border: 1px solid #a8b0bc;
-      border-style: outset;
+    }
+
+    p.item-price:hover {
+      background-color: #E893CF;
     }
 
   } //li

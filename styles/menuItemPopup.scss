@@ -38,7 +38,7 @@ form.popup {
     box-shadow: 2px 4px 4px 2px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: start;
     align-items: center;
     color: #5C5C5C;
 
@@ -50,13 +50,13 @@ form.popup {
 
     p.popupName {
       font-weight: bold;
-      margin: 12px;
+      margin: 12px 0px 6px 0px;
     }
 
     p.popupDesc {
       text-align: justify;
       font-size: smaller;
-      margin: 6px;
+      margin: 6px 0px 12px 0px;
     }
 
     div.quantityButtons {
@@ -72,7 +72,7 @@ form.popup {
         border: solid 1px transparent;
       }
 
-      p {
+      p#donutQuantity {
         margin: 0 15px;
       }
     } // div.quantityButtons

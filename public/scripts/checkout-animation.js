@@ -6,7 +6,7 @@ $(document).ready(function() {
     if (distanceFromTop > 260) {
       $("#checkout").css({ top: '1em' });
     } else {
-      $("#checkout").css({ top: `calc(260px - ${distanceFromTop}px)` });
+      $("#checkout").css({ top: `calc(280px - ${distanceFromTop}px)` });
     }
   });
 });
