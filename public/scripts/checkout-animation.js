@@ -1,9 +1,12 @@
 $(document).ready(function() {
+
   $(window).scroll(function() {
-    if ($(window).scrollTop() > 260) {
-      $("#checkout").css({ top: '25em' });
+    // Scroll with screen as banner disappears
+    let distanceFromTop = $(window).scrollTop();
+    if (distanceFromTop > 260) {
+      $("#checkout").css({ top: '1em' });
     } else {
-      $("#checkout").css({ top: '31em' });
+      $("#checkout").css({ top: `calc(260px - ${distanceFromTop}px)` });
     }
   });
 });

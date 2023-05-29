@@ -1,7 +1,7 @@
 // See: https://sass-lang.com/
 @use 'variables' as v;
 
-*{
+* {
   box-sizing: border-box;
 }
 
@@ -26,7 +26,8 @@ main.container {
   border: 1px solid #a8b0bc;
   border-radius: 12px;
   background-color: white;
-} //container
+  position: relative;
+}
 
 .menu-section {
   display: flex;
@@ -46,16 +47,19 @@ main.container {
   margin: 0;
   padding: 0 10em;
 }
+
 .menu-categories li {
   list-style: none;
   text-decoration: none;
 }
+
 .menu-categories li a {
   white-space: nowrap;
   display: block;
   padding-top: 1em;
   padding-bottom: 1.3em;
 }
+
 .menu-categories a:link,
 .menu-categories a:visited,
 .menu-categories a:hover,
@@ -69,7 +73,6 @@ main.container {
   border-bottom:1px solid black;
   margin-bottom: -1px;
 }
-
 
 .menu-items {
   padding: 20px;
