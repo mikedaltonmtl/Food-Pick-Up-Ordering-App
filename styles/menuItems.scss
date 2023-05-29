@@ -66,4 +66,8 @@ ul#menu-items {
     }
 
   } //li
+
+  li.menu-item:hover {
+    border: 1px solid #30A2FF;
+  }
 } // ul

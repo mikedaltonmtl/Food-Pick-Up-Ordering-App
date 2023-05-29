@@ -67,9 +67,16 @@ form.popup {
         width: 30px;
         height: 30px;
         border-radius: 50%;
-        background-color: orange;
+        background-color: #F3BCC8;
+        opacity: 0.7;
         box-shadow: 0px 3px 8px #aaa, inset 0px 2px 3px #fff;
         border: solid 1px transparent;
+      }
+
+      button.quantityButton:hover {
+        background-color: #F3BCC8;
+        opacity: 1;
+
       }
 
       p#donutQuantity {
@@ -83,13 +90,14 @@ form.popup {
       justify-content: space-between;
       border-radius: 10px;
       margin-top: 1em;
-      background-color: orange;
-      font-weight: bold;
+      background-color: #F3BCC8;
+      border: solid 1px transparent;
+      padding: 0 1.5em;
     }
 
     button#checkoutButton:hover {
       cursor: pointer;
-      background-color: yellow;
+      background-color: #E893CF;
     }
 
   } // div.popupContainer
