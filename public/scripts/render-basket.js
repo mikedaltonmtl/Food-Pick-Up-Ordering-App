@@ -9,6 +9,7 @@ const renderBasket = function() {
     console.log('page load cookie response:', response);
     let checkoutItem = '';
     const $checkoutItems = $('#checkout_Items');
+    $checkoutItems.empty();
     let totalCost = 0;
     for (const itemKey in response) {
       let item = response[itemKey];

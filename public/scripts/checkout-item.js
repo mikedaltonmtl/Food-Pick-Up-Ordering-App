@@ -17,36 +17,10 @@ $('#popup-item').on('click', '#checkoutButton', function(event) {
     method: 'POST',
     dataType: 'json',
     url: '/checkout',
-    data: {itemId, itemName, itemPrice, itemDescription, quantity}
+    data: { itemId, itemName, itemPrice, itemDescription, quantity }
   })
-    .done(response => {
-    // Update HTML with the data
-      let checkoutItem = '';
-      const $checkoutItems = $('#checkout_Items');
-      for (const itemKey in response) {
-        let item = response[itemKey];
-        checkoutItem = `
-        <li>
-          <div class="checkout-item-row">
-            <div class="checkout-item-quantity">
-              <p>${item.quantity}</p>
-            </div>
-            <p id="checkout_item_title" class="checkout-item-title">${item.itemName}</p>
-            <p id="checkout_item_price" class="checkout-item-price">${item.itemPrice}</p>
-          </div>
-          <p id="checkout_item_desc" class="checkout-item-description">${item.itemDescription}</p>
-          <button id="remove_item" class="checkout-item-remove">Remove</button>
-        </li>
-      `;
-      }
-      $checkoutItems.append(checkoutItem);
-
-      // Sum the order total and add it to the 'order now' btn
-      pricesArr.push(itemPrice.slice(3));
-      let orderTotal = pricesArr.reduce((a,b) => {
-        return (parseFloat(a) + parseFloat(b)).toFixed(2);
-      });
-      $('#order-total').text(`CA$${orderTotal}`);
+    .done(() => {
+      renderBasket();
       // Remove the pop-up and background opacity
       $('#popup-background').css('display', 'none');
       $('#popup-item').empty();
