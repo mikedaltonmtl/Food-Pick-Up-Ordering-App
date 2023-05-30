@@ -13,4 +13,14 @@ router.post('/', (req, res) => {
   res.json(req.session.items);
 });
 
+router.get('/', (req, res) => {
+
+  if (!req.session.items) {
+    req.session.items = [];
+  }
+
+  console.log('checkout session GET', req.session);
+  res.json(req.session.items);
+});
+
 module.exports = router;

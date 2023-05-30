@@ -90,4 +90,8 @@ $(document).ready(function() {
         }); // .quantityButton item on click
       }); // .menu item on click
     }); // .done
+
+    // Add the cookie items to the basket on page load
+    renderBasket();
+
 }); // document.ready

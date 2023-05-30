@@ -19,7 +19,7 @@ $('#popup-item').on('click', '#checkoutButton', function(event) {
     url: '/checkout',
     data: {itemId, itemName, itemPrice, itemDescription, quantity}
   })
-    .done((response) => {
+    .done(response => {
     // Update HTML with the data
       let checkoutItem = '';
       const $checkoutItems = $('#checkout_Items');
