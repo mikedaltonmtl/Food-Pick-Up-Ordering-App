@@ -1,10 +1,10 @@
-const db = require('../connection');
+// const db = require('../connection');
 
-const getStatus = (orderId) => {
-  return db.query(`SELECT * FROM orders WHERE id = ${orderId};`)
-    .then(data => {
-      return data.rows;
-    });
-};
+// const getStatus = (orderId) => {
+//   return db.query(`SELECT * FROM orders WHERE id = ${orderId};`)
+//     .then(data => {
+//       return data.rows;
+//     });
+// };
 
-module.exports = { getStatus };
+// module.exports = { getStatus };
