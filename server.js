@@ -44,14 +44,12 @@ const removeCookieItemRoutes = require('./routes/remove-cookie-item');
 
 // Mount all resource routes
 // Note: Endpoints that return data (eg. JSON) usually start with `/api`
-app.use('/login', loginRoutes);
 app.use('/api/users', userApiRoutes);
 app.use('/api/menu', menuApiRoutes);
-app.use('/api/status', statusApiRoutes);
 app.use('/status', statusRoutes);
-app.use('/sms-response', smsResponseRoutes);
+app.use('/api/status', statusApiRoutes);
 app.use('/checkout', checkoutRoutes);
-app.use('/order-now-send', orderNowSendRoutes);
+app.use('/login', loginRoutes);
 app.use('/remove-cookie-item', removeCookieItemRoutes);
 
 // Home page
