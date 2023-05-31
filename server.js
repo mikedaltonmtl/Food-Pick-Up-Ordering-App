@@ -38,10 +38,8 @@ const userApiRoutes = require('./routes/users-api');
 const menuApiRoutes = require('./routes/menu-api');
 const statusRoutes = require('./routes/status');
 const statusApiRoutes = require('./routes/status-api');
-const smsResponseRoutes = require('./routes/sms-response');
 const checkoutRoutes = require('./routes/checkout');
 const loginRoutes = require('./routes/login');
-const orderNowSendRoutes = require('./routes/order-now-send');
 const removeCookieItemRoutes = require('./routes/remove-cookie-item');
 
 // Mount all resource routes
