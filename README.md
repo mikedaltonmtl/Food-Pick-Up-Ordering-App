@@ -5,7 +5,7 @@ Test the app here: https://donut-company.onrender.com/.
 It might be a little slow to display, please be patient!
 
 This is a static, deployment version of the midterm Web Development Bootcamp project we made at Lighthouse Labs.
-The development account at Twilio which we used for SMS communications has expired, so I refactored the app just to 
+The development account at Twilio that we used for SMS communications has expired, so I refactored the app just to 
 show the store page. You can add and remove items to the cart for checkout, but the order cannot be placed.
 
 The original app allows a restaurant to communicate over SMS with a client that has placed an order on the restaurant's store page. The restaurant owner is also able to update the order status page to let the customer know when the order is ready for pickup, also using SMS.
@@ -13,7 +13,7 @@ The original app allows a restaurant to communicate over SMS with a client that 
 ## Final Product
 
 ### Store Page
-!["Screenshot of Store Page"](https://github.com/Karamvir-Bains/Food-Pick-Up-Ordering-App/blob/master/docs/store-front.png)
+!["Screenshot of Store Page"](./public/images/donuts.gif)
 
 
 
@@ -23,7 +23,6 @@ The original app allows a restaurant to communicate over SMS with a client that 
 2. Install dependencies: `npm i`
 3. Fix to binaries for sass: `npm rebuild node-sass`
 4. Run the server: `npm run local`
-  - Note: nodemon is used, so you should not have to restart your server
 5. Visit `http://localhost:8080/` and enjoy!
 
 
