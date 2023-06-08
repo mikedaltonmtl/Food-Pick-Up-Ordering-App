@@ -10,6 +10,8 @@ show the store page. You can add and remove items to the cart for checkout, but 
 
 The original app allows a restaurant to communicate over SMS with a client that has placed an order on the restaurant's store page. The restaurant owner is also able to update the order status page to let the customer know when the order is ready for pickup, also using SMS.
 
+The original and complete repository can be found here: https://github.com/Karamvir-Bains/The-Donut-Company.
+
 ## Final Product
 
 ### Store Page
