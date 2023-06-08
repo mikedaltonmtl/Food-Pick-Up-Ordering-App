@@ -1,7 +1,9 @@
 The Donut Company
 =========
 
-Test the app (it might be a little slow to display, please be patient!): https://donut-company.onrender.com/.
+Test the app here: https://donut-company.onrender.com/.
+
+It might be a little slow to display, please be patient!
 
 This is a static, deployment version of the midterm Web Development Bootcamp project we made at Lighthouse Labs.
 The development account at Twilio which we used for SMS communications has expired, so I refactored the app just to 
