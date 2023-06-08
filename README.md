@@ -2,7 +2,6 @@ The Donut Company
 =========
 
 Test the app here: https://donut-company.onrender.com/.
-
 It might be a little slow to display, please be patient!
 
 This is a static, deployment version of the midterm Web Development Bootcamp project we made at Lighthouse Labs.
