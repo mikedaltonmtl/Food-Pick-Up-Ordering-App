@@ -1,44 +1,32 @@
 The Donut Company
 =========
-A web app that allows a restaurant to communicate over SMS, with a client that has placed an order on the restaurant's store page. The restaurant owner is also able to update the order status page to allow the customer to know when the order is ready for pickup over SMS.
+
+Test the app (it might be a little slow to display, please be patient!): https://donut-company.onrender.com/.
+
+This is a static, deployment version of the midterm Web Development Bootcamp project we made at Lighthouse Labs.
+The development account at Twilio which we used for SMS communications has expired, so I refactored the app just to 
+show the store page. You can add and remove items to the cart for checkout, but the order cannot be placed.
+
+The original app allows a restaurant to communicate over SMS with a client that has placed an order on the restaurant's store page. The restaurant owner is also able to update the order status page to let the customer know when the order is ready for pickup, also using SMS.
 
 ## Final Product
 
 ### Store Page
 !["Screenshot of Store Page"](https://github.com/Karamvir-Bains/Food-Pick-Up-Ordering-App/blob/master/docs/store-front.png)
 
-### Status Page
-!["Screenshot of Status Page"](https://github.com/Karamvir-Bains/Food-Pick-Up-Ordering-App/blob/update/README/docs/status-page.png)
-!["Screenshot of Confirmed Status"](https://github.com/Karamvir-Bains/Food-Pick-Up-Ordering-App/blob/update/README/docs/inprogress-status.png)
-!["Screenshot of Ready Status"](https://github.com/Karamvir-Bains/Food-Pick-Up-Ordering-App/blob/update/README/docs/complete-status.png)
 
-### SMS Communication
-!["Screenshot of Twilio SMS Communication"](https://github.com/Karamvir-Bains/Food-Pick-Up-Ordering-App/blob/update/README/docs/SMS-message.png)
 
 ## Getting Started
 
-1. Create the `.env` by using `.env.example` as a reference: `cp .env.example .env`
-2. Update the .env file with your correct local information
-  - username: `labber` 
-  - password: `labber` 
-  - database: `midterm`
-3. Setup the following Twilio variables in the .env file
-  - RESTAURANT_PHONE
-  - PHONE_NUMBER
-  - MESSAGING_SERVICE_SID
-  - AUTHENTICATION_TOKEN
-  - ACCOUNT_SID
-4. Install dependencies: `npm i`
-5. Fix to binaries for sass: `npm rebuild node-sass`
-6. Reset database: `npm run db:reset`
-  - Check the db folder to see what gets created and seeded in the SDB
-7. Run the server: `npm run local`
+1. Clone this repository https://github.com/mikedaltonmtl/Food-Pick-Up-Ordering-App
+2. Install dependencies: `npm i`
+3. Fix to binaries for sass: `npm rebuild node-sass`
+4. Run the server: `npm run local`
   - Note: nodemon is used, so you should not have to restart your server
-8. Setup and host a [ngrok network](https://ngrok.com/).
-8. Visit `http://localhost:8080/`
+5. Visit `http://localhost:8080/` and enjoy!
 
 
-## Dependencies
+## Original Dependencies
 
 - Node 10.x or above
 - NPM 5.x or above
